@@ -9,16 +9,3 @@ It is not allowed to use string built-in methods here.
 For example, given the string "abc123XYz!", the function should return "bcd123YZa!".
 
 """
-
-def solution(s):
-    new_string = ""
-    for letter in s:
-        if 'a' <= letter <= 'y' or 'A' <= letter <= 'Y':
-            new_string += chr(ord(letter) + 1)
-        elif letter == 'z':
-            new_string += 'a'
-        elif letter == 'Z':
-            new_string += 'A'
-        else:
-            new_string += letter
-    return new_string
