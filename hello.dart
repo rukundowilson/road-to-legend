@@ -1,6 +1,8 @@
 void main() {
   // helloSomeOne("wilson");
-  checkAge(13);
+  // checkAge(13);
+  // sumToN(3);
+  printEvens(10);
 }
 
 void checkAge(int age) {
@@ -11,6 +13,25 @@ void checkAge(int age) {
     print("you are a teenager");
   } else {
     print("you are an adult");
+  }
+}
+
+// sum 0-n
+void sumToN(int n) {
+  // your code here
+  int sum = 0;
+  for (int i = 1; i <= n; i++) {
+    sum = sum + i;
+  }
+  print("digit's summation for $n is $sum");
+}
+
+void printEvens(int limit) {
+  // your code here
+  for (int i = 1; i <= limit; i++) {
+    if (i % 2 == 0) {
+      print(i);
+    }
   }
 }
 
