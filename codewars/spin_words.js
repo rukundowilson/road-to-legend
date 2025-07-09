@@ -5,7 +5,8 @@ function spinWords(string){
   let words = string.split(" ");
   
   //finally: return a full string
-  return newOperatedArray(words).join(" ")
+  console.log(newOperatedArray(words).join(" "))
+  return newOperatedArray(words).join(" ");
 }
 // return a new array after reverse operation
 function newOperatedArray(words){
